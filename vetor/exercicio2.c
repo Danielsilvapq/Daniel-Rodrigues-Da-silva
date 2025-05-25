@@ -1,10 +1,20 @@
+#include <stdio.h>
 
-vetor = [0] * 50
+int main() {
+    int vetor[50];
 
+    printf("Digite 50 números inteiros:\n");
+    for (int i = 0; i < 50; i++) {
+        printf("Número %d: ", i + 1);
+        scanf("%d", &vetor[i]);
+    }
 
-for i in range(50):
-    vetor[i] = int(input(f"Digite o elemento {i+1}: "))
+    printf("\nNúmeros na ordem contrária:\n");
+    for (int i = 49; i >= 0; i--) {
+        printf("%d ", vetor[i]);
+    }
+    printf("\n");
 
-print("\nElementos na ordem contrária:")
-for i in range(49, -1, -1):  
-    print(vetor[i])
+    return 0;
+}
+
