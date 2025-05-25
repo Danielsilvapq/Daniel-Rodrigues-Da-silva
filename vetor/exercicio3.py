@@ -11,7 +11,7 @@ for i in range(100):
     if numeros[i] == x:
         existe = True
         break
-
+1
 if existe:
     print(f"O valor {x} existe no conjunto.")
 else:
